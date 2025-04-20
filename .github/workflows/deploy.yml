@@ -19,7 +19,8 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16'
+          # Aquí subes a la versión que Astro requiere (>=18.17.1)
+          node-version: '18.17.1'
 
       - name: Install dependencies
         run: npm install
