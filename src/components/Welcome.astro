@@ -57,7 +57,7 @@ import "../styles/global.css";
       });
 
       const data = await res.json();
-      resultDiv.textContent = `✅ Número detectado: ${data.prediction}`;
+      resultDiv.textContent = `✅ Número detectado: ${data.predicted_class}`;
     } catch (err) {
       resultDiv.textContent = '❌ Error al procesar la imagen.';
     }
