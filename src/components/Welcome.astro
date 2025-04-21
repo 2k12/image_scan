@@ -51,7 +51,7 @@ import "../styles/global.css";
 
     const formData = new FormData(form);
     try {
-      const res = await fetch('http://localhost:5000/predict', {
+      const res = await fetch('https://back-modelo.onrender.com/predict', {
         method: 'POST',
         body: formData
       });
